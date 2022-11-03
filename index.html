@@ -76,7 +76,7 @@
 			background-color: #e7e7e7;
 		}
 
-		@media only screen and (min-width: 200px) {
+		@media only screen and (min-width: 200px) and (max-width: 400px) {
 
 			main {
 				margin-left: 30px;
@@ -95,8 +95,8 @@
 
 			h1 {
 				text-align: center;
-				padding: 0px 0px 0px 0px;
-				font-size: 20px;
+				padding: 10px;
+				font-size: 15px;
 			}
 
 			h2 {
@@ -146,7 +146,7 @@
 			}
 		}
 
-		@media only screen and (min-width: 400px) {
+		@media only screen and (min-width: 400px) and (max-width: 600px) {
 
 			main {
 				margin-left: 30px;
@@ -213,7 +213,7 @@
 			}
 		}
 
-		@media only screen and (min-width: 600px) {
+		@media only screen and (min-width: 600px) and (max-width: 800px) {
 
 			main {
 				margin-left: 30px;
@@ -298,6 +298,8 @@
 				width: 370px;
 			}
 
+
+
 			h1 {
 				text-align: center;
 				padding: 20px 10px 0px 0px;
@@ -330,16 +332,15 @@
 			}
 
 			.row {
-				display: flex;
-				width: 800px;
+				display: flex !important;
+				width: 800px !important;
 			}
 
 			.col {
-				display: flex;
-				flex-direction: column;
-				margin: 1em;
-				padding: 0.3em;
-
+				display: flex !important;
+				flex-direction: column !important;
+				margin: 1em !important;
+				padding: 0.3em !important;
 			}
 
 			.button:hover {
@@ -375,13 +376,23 @@
 			<section>
 				<h2>Возможные места прохождения производственной практики</h2>
 				<ol>
-					<li>ISPsystem</li>
-					<li>КРОК</li>
-					<li>En+</li>
-					<li>Yandex</li>
-					<li>ИАЗ</li>
-					<li>Rkit</li>
-					<li>1PS.ru</li>
+					<div class="row">
+						<div class="col">
+
+							<li>ISPsystem</li>
+							<li>КРОК</li>
+							<li>En+</li>
+							<li>Yandex</li>
+
+						</div>
+						<div class="col">
+
+							<li>ИАЗ</li>
+							<li>Rkit</li>
+							<li>1PS.ru</li>
+
+						</div>
+					</div>
 				</ol>
 			</section>
 			<section>
@@ -389,24 +400,30 @@
 				<div class="row">
 					<div class="col">
 						<ul>
-							<li><button data-image="img/PO.png" class="button" onclick="onMyKnopochkaPress(this)">Разработчик ПО</button>
+							<li><button data-image="img/PO.png" class="button" onclick="onMyKnopochkaPress(this)">Разработчик
+									ПО</button>
 
 							</li>
 							<li><button data-image="img/Web.png" class="button"
 									onclick="onMyKnopochkaPress(this)">Web-разработчик</button></li>
-							<li><button data-image="img/1c.png" class="button" onclick="onMyKnopochkaPress(this)">1С-разработчик</button>
+							<li><button data-image="img/1c.png" class="button"
+									onclick="onMyKnopochkaPress(this)">1С-разработчик</button>
 							</li>
 							<li><button data-image="img/analitic.png" class="button"
 									onclick="onMyKnopochkaPress(this)">Web-аналитик</button></li>
-							<li><button data-image="img/ux.png" class="button" onclick="onMyKnopochkaPress(this)">UX-специалист</button>
+							<li><button data-image="img/ux.png" class="button"
+									onclick="onMyKnopochkaPress(this)">UX-специалист</button>
 							</li>
 							<li><button data-image="img/sisanalitic.png" class="button" onclick="onMyKnopochkaPress(this)">Системный
 									аналитик</button></li>
-							<li><button data-image="img/de.png" class="button" onclick="onMyKnopochkaPress(this)">Data Engineer</button>
+							<li><button data-image="img/de.png" class="button" onclick="onMyKnopochkaPress(this)">Data
+									Engineer</button>
 							</li>
-							<li><button data-image="img/ds.png" class="button" onclick="onMyKnopochkaPress(this)">Data Scientist</button>
+							<li><button data-image="img/ds.png" class="button" onclick="onMyKnopochkaPress(this)">Data
+									Scientist</button>
 							</li>
-							<li><button data-image="img/qa.png" class="button" onclick="onMyKnopochkaPress(this)">QA-специалист</button>
+							<li><button data-image="img/qa.png" class="button"
+									onclick="onMyKnopochkaPress(this)">QA-специалист</button>
 							</li>
 							<li><button data-image="img/menit.png" class="button" onclick="onMyKnopochkaPress(this)">Менеджер
 									ИТ-проектов</button></li>
@@ -416,7 +433,8 @@
 									onclick="onMyKnopochkaPress(this)">DevOps</button></li>
 							<li><button data-image="img/andr.png" class="button"
 									onclick="onMyKnopochkaPress(this)">Android/iOS-разработчик</button></li>
-							<li><button data-image="img/vr.png" class="button" onclick="onMyKnopochkaPress(this)">VR-разработчик</button>
+							<li><button data-image="img/vr.png" class="button"
+									onclick="onMyKnopochkaPress(this)">VR-разработчик</button>
 							</li>
 						</ul>
 					</div>
